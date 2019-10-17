@@ -1,0 +1,10 @@
+# simple-redux
+
+This demo just shows a counter incrementing/decrementing using Redux hooks API.
+
+- `<Provider>` can wrap any part of the app, but frequently wraps the app globally. It uses React's Context API to monitor changes to the store and propagate those changes throughout the app via props. When components get prop modifications, they update.
+- `createStore` is just needed to convert a reducer to something `<Provider>` can work with.
+- `rootReducer` is the conventional variable name for your global `store` entrypoint. Typically it is created by a combination of reducers that are combined with... `combineReducers()`. Since this app is so tiny it doesn't really make sense to create multiple reducers so I'm just using the `rootReducer` for a single reducer. rootReducers almost always accept an `initialState` which should be the default state of the app before any user interactions have happened.
+- "reducers" are functions that contain switch statements that accept some state and an action. Within these, the state is modified depending on what the _action type_ (usually a constant defined in a separate file, to help prevent typo errors) is and what the _payload_ is. In the case of a simple Counter component, we can hard-code the payload as +1 or -1, but in a real world app, a payload is an object containing data relevant to the update (e.g. the action type `ADD_USER` might have a payload of `{ firstName: 'Bob', lastName: 'Smith' }`).
+- The `useSelector` and `useDispatch` hooks cleanup a lot of Redux boilerplate. Before these hooks you had to use functions and HOCs like `mapStateToProps`/`mapDispatchToProps`, `connect`. The hook alternatives place this logic at the top of the relevant component and make it easier to reason about.
+- `dispatch()` accepts reducer arguments like the action `type` and the `payload`.
