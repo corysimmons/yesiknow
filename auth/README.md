@@ -1,6 +1,6 @@
 # auth
 
-> WIP: Need to make this work as well as 
+> **WIP**
 
 - make a Postgres db
 - Add a `.env` with that db's config. Mine looks like:
