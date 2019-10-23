@@ -2,17 +2,20 @@
   "users": [
     {
       "id": 1,
-      "email": "Bob",
+      "name": "Bob",
+      "email": "bob@example.com",
       "age": 30
     },
     {
       "id": 2,
-      "email": "Sam",
+      "name": "Sam",
+      "email": "sam@example.com",
       "age": 20
     },
     {
       "id": 3,
-      "email": "Pat",
+      "name": "Pat",
+      "email": "pat@example.com",
       "age": 40
     }
   ],
