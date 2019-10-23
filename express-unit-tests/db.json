@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Bob",
+      "email": "bob@example.com",
+      "age": 30
+    },
+    {
+      "id": 2,
+      "name": "Sam",
+      "email": "sam@example.com",
+      "age": 20
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Some Title 1",
+      "content": "Some Content 1"
+    },
+    {
+      "id": 2,
+      "title": "Some Title 2",
+      "content": "Some Content 2"
+    },
+    {
+      "id": 3,
+      "title": "Some Title 3",
+      "content": "Some Content 3"
+    },
+    {
+      "id": 4,
+      "title": "Some Title 4",
+      "content": "Some Content 4"
+    }
+  ]
+}
