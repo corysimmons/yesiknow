@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="card text-center">
+    <div class="card-body">
+      <h1>Welcome to Pollster</h1>
+      <p>
+        This is an example Django polling app from following along with
+        <a href="https://www.youtube.com/watch?v=e1IyzVyrLSU" target="_blank">this YouTube video</a>
+        (which follows along with the <a href="https://docs.djangoproject.com/en/3.0/intro/tutorial01/" target="_blank">official Django intro tutorial</a>).
+      </p>
+      <a href="{% url 'polls:index' %}" class="btn btn-dark">View Polls</a>
+    </div>
+  </div>
+{% endblock %}
