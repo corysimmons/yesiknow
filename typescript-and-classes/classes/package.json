@@ -1,0 +1,11 @@
+{
+  "name": "classes",
+  "scripts": {
+    "attend": "ts-node school"
+  },
+  "devDependencies": {
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  },
+  "private": true
+}
