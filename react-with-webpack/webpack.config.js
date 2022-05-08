@@ -9,6 +9,7 @@ module.exports = {
   },
   module: {
     rules: [
+      // Babel + React
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
@@ -23,7 +24,13 @@ module.exports = {
             ],
           }
         }
-      }
+      },
+
+      // CSS
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ]
   }
 };
